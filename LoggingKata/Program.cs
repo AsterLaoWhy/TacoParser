@@ -53,7 +53,7 @@ namespace LoggingKata
                 GeoCoordinate corA = new GeoCoordinate(locA.Location.Latitude, locA.Location.Longitude);
                 foreach(var locB in locations) 
                 {
-                    GeoCoordinate corB = new GeoCoordinate(locB.Location.Latitude, locA.Location.Longitude);
+                    GeoCoordinate corB = new GeoCoordinate(locB.Location.Latitude, locB.Location.Longitude);
                     var tempDist = corA.GetDistanceTo(corB);
                     if (tempDist > distance) 
                     {
